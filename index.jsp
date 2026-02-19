@@ -9,5 +9,14 @@
 <body>
 	<p>こんにちは！</p>
 	<% out.println(new java.util.Date()); %>
+	
+	<p style="font-weight:bold;">演習1</p>
+	<%!
+	static int add(int a,int b){
+		return a+b;
+	}
+	%>
+	<p>1+2=<%=add(1,2) %></p>
+	<p>1+2=<%=add(3,4) %></p>
 </body>
 </html>
